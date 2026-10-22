@@ -24,4 +24,4 @@ The key remains server-side and is never sent to the browser. Do not put it in `
 - Review, approve, or reject a sample purchase proposal.
 - Create a sample savings goal.
 
-The prototype has no persistent backend or bank connection. Montserrat and Phosphor Icons are loaded from external CDNs.
+The prototype has no persistent backend or bank connection. Neo Sans is used when installed on the device; a licensed webfont is required for consistent rendering across devices. Phosphor Icons are loaded from an external CDN.
