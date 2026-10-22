@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f8f6" />
+    <meta name="description" content="Clove helps you understand your money and plan what comes next." />
+    <title>Clove — A little more in control</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#overview" aria-label="Clove home"><span class="brand-mark">✳</span><span>clove</span></a>
+        <div class="workspace-label">YOUR MONEY</div>
+        <nav class="primary-nav">
+          <button class="nav-item active" data-view="overview"><i class="ph ph-squares-four"></i><span>Overview</span></button>
+          <button class="nav-item" data-view="transactions"><i class="ph ph-arrows-left-right"></i><span>Transactions</span><span class="nav-count">8</span></button>
+          <button class="nav-item" data-view="plan"><i class="ph ph-calendar-check"></i><span>Plan</span></button>
+          <button class="nav-item" data-view="goals"><i class="ph ph-flag"></i><span>Goals</span></button>
+        </nav>
+        <div class="workspace-label second-label">YOUR COMPANION</div>
+        <nav class="primary-nav"><button class="nav-item" data-view="ai"><i class="ph ph-sparkle"></i><span>Clove AI</span><span class="new-dot"></span></button></nav>
+        <div class="sidebar-bottom">
+          <div class="demo-note"><i class="ph ph-info"></i><span>Demo data<br /><small>Everything here is simulated.</small></span></div>
+          <button class="profile-button"><span class="avatar">A</span><span class="profile-copy"><strong>Arjun Mehta</strong><small>Personal account</small></span><i class="ph ph-dots-three"></i></button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar"><div class="mobile-brand"><span class="brand-mark">✳</span> clove</div><div class="breadcrumb"><span>My finances</span><i class="ph ph-caret-right"></i><strong id="crumb-current">Overview</strong></div><div class="topbar-actions"><span class="period-chip"><i class="ph ph-calendar-blank"></i> October 2026 <i class="ph ph-caret-down"></i></span><button class="icon-button" aria-label="Notifications"><i class="ph ph-bell"></i><b></b></button></div></header>
+        <div id="view-root" class="view-root"></div>
+        <footer class="page-footer"><span>Made for a little more peace of mind.</span><span><i class="ph ph-lock-key"></i> Your financial data stays yours</span></footer>
+      </main>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <button class="active" data-view="overview"><i class="ph ph-squares-four"></i><span>Home</span></button><button data-view="transactions"><i class="ph ph-arrows-left-right"></i><span>Activity</span></button><button data-view="plan"><i class="ph ph-calendar-check"></i><span>Plan</span></button><button data-view="goals"><i class="ph ph-flag"></i><span>Goals</span></button><button data-view="ai"><i class="ph ph-sparkle"></i><span>Clove</span></button>
+    </nav>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
